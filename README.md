@@ -18,6 +18,7 @@
 4. 完成
 
 ## 效果
+<img src="https://s1.ax1x.com/2020/07/30/auf7i4.md.png" width="100%">
 
 <img src="https://s1.ax1x.com/2020/07/30/auWnnf.png" width="100%">
 
