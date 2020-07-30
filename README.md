@@ -22,13 +22,16 @@
 
 4. 完成
 
-5. Ps:会覆盖之前的设置哦，要小心点
+> 会覆盖之前的设置哦，要小心点
 
 ## 已知bug
 
 1. 无法设置音效
 
 2. 无法使用第三方登录
+
+> 你可以去[UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)项目发issue
+> <img src="https://s1.ax1x.com/2020/07/30/aKvHPA.png" width="100%">
 
 ### 修复方法
 
