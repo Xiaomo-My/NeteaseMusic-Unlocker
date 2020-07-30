@@ -1,7 +1,6 @@
 @echo off
 cd %~dp0files
 title UnblockNeteaseMusic 修改 by NULL ^& 小宇
-if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
 echo.
 echo 本程序基于nondanee大佬的程序改进而成（主要还是做了一键配置脚本，傻瓜化了）
 echo 源码地址：https://github.com/nondanee/UnblockNeteaseMusic
@@ -79,7 +78,9 @@ echo oShellLink.Description = "网易云音乐" >> Shortcut.vbs
 echo oShellLink.WorkingDirectory = %lnkaddress%" >> Shortcut.vbs
 echo oShellLink.Save >> Shortcut.vbs
 start Shortcut.vbs
-MOVE /Y Config C:\Users\Windows\AppData\Local\Netease\CloudMusic
+start killcloudmusic.bat
+%software%cloudmusic.exe
+MOVE /Y Config C:\Users\"%username%"\AppData\Local\Netease\CloudMusic
 start %software%Start.exe
 cls
 echo.
