@@ -30,8 +30,7 @@
 
 2. 无法使用第三方登录
 
-> 你可以去[UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)项目发issue
-> <img src="https://s1.ax1x.com/2020/07/30/aKvHPA.png" width="100%">
+> 你可以去[UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)项目发issue ![HUAJI](https://s1.ax1x.com/2020/07/30/aKvHPA.png)
 
 ### 修复方法
 
