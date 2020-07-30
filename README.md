@@ -8,7 +8,7 @@
 
 - 使用其他软件音源替换无版权歌曲链接
 
-- 根据nondanee的[UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)项目更改而来，做了优化和一键脚本
+- 根据[nondanee](https://github.com/nondanee)的[UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)项目更改而来，做了优化和一键脚本
 
 - 无需手动进行繁琐的配置，运行即用，自动配置
 
