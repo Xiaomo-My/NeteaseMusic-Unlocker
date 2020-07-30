@@ -7,7 +7,7 @@
 ## 特性
 
 - 使用其他软件音源替换无版权歌曲链接
-- 根据nondanee的UnblockNeteaseMusic项目更改而来，做了优化和一键脚本
+- 根据nondanee的[UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)项目更改而来，做了优化和一键脚本
 - 无需手动进行繁琐的配置，运行即用，自动配置
 
 ## 运行
@@ -29,7 +29,6 @@
 [trazyn/ieaseMusic](https://github.com/trazyn/ieaseMusic)
 
 [listen1/listen1_chrome_extension](https://github.com/listen1/listen1_chrome_extension)
-
 向所有同类项目致敬
 
 [EraserKing/CloudMusicGear](https://github.com/EraserKing/CloudMusicGear)
