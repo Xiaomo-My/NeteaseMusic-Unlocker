@@ -19,7 +19,7 @@
 
 ## 效果
 
-<img src="https://user-images.githubusercontent.com/26399680/60316017-87de8a80-999b-11e9-9381-16d40efbe7f6.png" width="100%">
+<img src="https://s1.ax1x.com/2020/07/30/auWnnf.png" width="100%">
 
 ## 致谢
 
