@@ -14,7 +14,7 @@
 
 ## 运行
 
-1. 下载最新的版本
+1. [在这里](https://github.com/xiaoyv404/NeteaseMusic-Unlocker/releases)下载最新的版本
 
 2. 解压文件
 
