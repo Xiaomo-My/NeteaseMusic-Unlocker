@@ -28,8 +28,8 @@
 
 2. 无法使用第三方登录
 
-> 你可以去[UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic/issues)项目发issue ![HUAJI](https://s1.ax1x.com/2020/07/30/aKvHPA.png)
-> ~~毕竟这是他们的锅~~
+> 你可以去[UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic/issues)项目发issue ![HUAJI](https://s1.ax1x.com/2020/07/30/aKvHPA.png)   
+~~毕竟这是他们的锅~~
 
 3. **会覆盖之前的设置**
 
