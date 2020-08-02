@@ -1,17 +1,61 @@
 @echo off
-cd %~dp0files
-title UnblockNeteaseMusic 修改 by NULL ^& 小宇
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+if '%errorlevel%' NEQ '0' (
+goto UACPrompt
+) else ( goto gotAdmin )
+:UACPrompt
+echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
+"%temp%\getadmin.vbs"
+exit /B
+:gotAdmin
+if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
+if /i "%PROCESSOR_IDENTIFIER:~0,3%"=="x86" (set "bit=x86") else (set "bit=x64")
+set /a errorlevel=
+if exist "%TEMP%\consoleSettingsBackup.reg" regedit /S "%TEMP%\consoleSettingsBackup.reg"&DEL /F /Q "%TEMP%\consoleSettingsBackup.reg"&goto :mainstart
+regedit /S /e "%TEMP%\consoleSettingsBackup.reg" "HKEY_CURRENT_USER\Console"
+echo REGEDIT4>"%TEMP%\disablequickedit.reg"
+echo [HKEY_CURRENT_USER\Console]>>"%TEMP%\disablequickedit.reg"
+(echo "QuickEdit"=dword:00000000)>>"%TEMP%\disablequickedit.reg"
+regedit /S "%TEMP%\disablequickedit.reg"
+DEL /F /Q "%TEMP%\disablequickedit.reg"
+start "" "cmd" /c "%~dpnx0"&exit
+:mainstart
+cd /d %~dp0files
+title NeteaseMusic Unlocker 修改 by NULL ^& 小宇
+mode con lines=30 cols=120
+:mouse
+cls
 echo.
-echo 本程序基于nondanee大佬的程序改进而成（主要还是做了一键配置脚本，傻瓜化了）
-echo 源码地址：https://github.com/nondanee/UnblockNeteaseMusic
 echo.
-echo 修改 by NULL ^& 小宇
-echo 本项目地址：https://github.com/xiaoyv404/NeteaseMusic-Unlocker/
-echo 本脚本为一次性脚本，运行完后即作废，请勿再次运行或复制给他人，如需分享请分享原文件！
+echo        ###     ## ##      ## ##      ## ###     ## ##        #######   ######  ##    ##  ######## ########  
+echo        ####    ## ###    ### ##      ## ####    ## ##       ##     ## ##    ## ##   ##   ##       ##     ## 
+echo        ## ##   ## ####  #### ##      ## ## ##   ## ##       ##     ## ##       ##  ##    ##       ##    ## 
+echo        ##  ##  ## ## #### ## ##      ## ##  ##  ## ##       ##     ## ##       #####     ######   ########  
+echo        ##   ## ## ##  ##  ## ##      ## ##   ## ## ##       ##     ## ##       ##  ##    ##       ##   ## 
+echo        ##    #### ##      ## ##      ## ##    #### ##       ##     ## ##    ## ##   ##   ##       ##    ## 
+echo        ##     ### ##      ##  ########  ##     ### ########  #######   ######  ##    ##  ######## ##     ## 
 echo.
 echo.
-echo 按任意键开始配置脚本
-pause >nul
+echo                ===================================================================================
+echo                          项目地址：https://github.com/xiaoyv404/NeteaseMusic-Unlocker/
+echo                ===================================================================================
+echo                本脚本为一次性脚本，运行完后即作废，请勿再次运行或复制给他人，如需分享请分享原文件！
+echo                ===================================================================================
+echo.
+echo.
+echo                                             ┍========================┓              
+echo                                              ^|                       ^|
+echo                                              ^|        开始部署       ^|
+echo                                              ^|                       ^|
+echo                                             ┖========================┙
+ConsExt /event
+set /a xy=%errorlevel%
+set /a X=%xy:~0,-3%
+set /a Y=%xy%-1000*%X%
+if %y% gtr 18 if %y% lss 22 if %x% gtr 44 if %x% lss 70 goto start
+goto mouse
+:start 
 if not exist C:\"Program Files (x86)"\Netease\CloudMusic\ ( goto nosoftware )
 set software=C:\"Program Files (x86)"\Netease\CloudMusic\
 set lnkaddress="C:\Program Files (x86)\Netease\CloudMusic\
